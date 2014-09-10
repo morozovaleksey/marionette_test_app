@@ -1,6 +1,11 @@
-console.log @
+
 @Demo = do (Backbone, Marionette) ->
     App = new Marionette.Application
+
+    App.on "initialize:before", (options) ->
+      alert 2
+      @currentUser = App.request "set:current:user", options.currentUser
+
 
     App.addRegions
         headerRegion: "#header-region"
@@ -13,7 +18,7 @@ console.log @
 
 
 
-    App.on "initialize:after", ->
+    App.on "initialize:after", (options) ->
         if Backbone.history
             Backbone.history.start()
 
