@@ -2,10 +2,11 @@
 @Demo = do (Backbone, Marionette) ->
     App = new Marionette.Application
 
-    App.on "initialize:before", (options) ->
-      alert 2
-      @currentUser = App.request "set:current:user", options.currentUser
 
+    App.on "initialize:before", (options) ->
+      @currentUser = App.request "set:current:user", options.currentUser
+   	#App.on "initialize:before", (options) ->
+      #App.module('InitializeApp').start()
 
     App.addRegions
         headerRegion: "#header-region"

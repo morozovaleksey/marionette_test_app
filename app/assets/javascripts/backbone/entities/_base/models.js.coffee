@@ -1,4 +1,3 @@
-@Demo.module "HeaderApp.List", (List, App, Backbone, Marionette, $, _) ->
+@Demo.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 
-  class Entities.Collections extends Backbone.Model
-    someModelProperty: true
+  class Entities.Model extends Backbone.Model

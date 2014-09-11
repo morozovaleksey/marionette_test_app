@@ -10,13 +10,11 @@ gem 'thin'
 group :assets do
 gem 'eco'
 gem 'compass-rails'
-gem 'bootstrap-sass-rails'
-
+gem 'autoprefixer-rails'
 gem 'therubyracer'
 gem 'less-rails'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -54,3 +52,6 @@ gem 'spring',        group: :development
 gem 'rabl'
 gem 'oj'
 gem 'gon'
+
+gem 'bootstrap-sass'
+gem 'sass-rails'
